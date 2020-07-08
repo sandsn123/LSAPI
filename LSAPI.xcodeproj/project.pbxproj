@@ -26,6 +26,7 @@
 		320BEAAB24B5C46100C45457 /* AlamofireExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BEA9A24B5C46100C45457 /* AlamofireExecutor.swift */; };
 		320BEAAC24B5C46100C45457 /* StringParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BEA9B24B5C46100C45457 /* StringParser.swift */; };
 		320BEAAF24B5CC1400C45457 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320BEAAE24B5CC1400C45457 /* RxSwift.framework */; };
+		320BEAB324B5D40300C45457 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320BEAB224B5D40300C45457 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		320BEA9A24B5C46100C45457 /* AlamofireExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireExecutor.swift; sourceTree = "<group>"; };
 		320BEA9B24B5C46100C45457 /* StringParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringParser.swift; sourceTree = "<group>"; };
 		320BEAAE24B5CC1400C45457 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		320BEAB224B5D40300C45457 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				320BEAAF24B5CC1400C45457 /* RxSwift.framework in Frameworks */,
+				320BEAB324B5D40300C45457 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +121,7 @@
 		320BEAAD24B5CC1300C45457 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				320BEAB224B5D40300C45457 /* Alamofire.framework */,
 				320BEAAE24B5CC1400C45457 /* RxSwift.framework */,
 			);
 			name = Frameworks;

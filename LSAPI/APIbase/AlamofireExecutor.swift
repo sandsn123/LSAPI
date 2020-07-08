@@ -1,7 +1,7 @@
 
 import Foundation
 import RxSwift
-//import Alamofire
+import Alamofire
 //
 //public class AlamofireExecutor: ExecutorType {
 //    public static let instance = AlamofireExecutor()
