@@ -27,6 +27,8 @@
 		320BEAAC24B5C46100C45457 /* StringParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BEA9B24B5C46100C45457 /* StringParser.swift */; };
 		320BEAAF24B5CC1400C45457 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320BEAAE24B5CC1400C45457 /* RxSwift.framework */; };
 		320BEAB324B5D40300C45457 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320BEAB224B5D40300C45457 /* Alamofire.framework */; };
+		320BEAB824B5D9C500C45457 /* ServiceType+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BEAB624B5D9C500C45457 /* ServiceType+Rx.swift */; };
+		320BEAB924B5D9C500C45457 /* ServiceType+AlamofireExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BEAB724B5D9C500C45457 /* ServiceType+AlamofireExecutor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		320BEA9B24B5C46100C45457 /* StringParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringParser.swift; sourceTree = "<group>"; };
 		320BEAAE24B5CC1400C45457 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		320BEAB224B5D40300C45457 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		320BEAB624B5D9C500C45457 /* ServiceType+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceType+Rx.swift"; sourceTree = "<group>"; };
+		320BEAB724B5D9C500C45457 /* ServiceType+AlamofireExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceType+AlamofireExecutor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				320BEA8A24B5C46100C45457 /* APIbase */,
+				320BEAB724B5D9C500C45457 /* ServiceType+AlamofireExecutor.swift */,
+				320BEAB624B5D9C500C45457 /* ServiceType+Rx.swift */,
 				320BEA8224B5C3C300C45457 /* LSAPI.h */,
 				320BEA8324B5C3C300C45457 /* Info.plist */,
 			);
@@ -206,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320BEAB924B5D9C500C45457 /* ServiceType+AlamofireExecutor.swift in Sources */,
 				320BEAA424B5C46100C45457 /* Result.swift in Sources */,
 				320BEAAB24B5C46100C45457 /* AlamofireExecutor.swift in Sources */,
 				320BEAA724B5C46100C45457 /* Request.swift in Sources */,
@@ -215,6 +222,7 @@
 				320BEA9F24B5C46100C45457 /* GenericRequest.swift in Sources */,
 				320BEA9E24B5C46100C45457 /* VoidParser.swift in Sources */,
 				320BEAA924B5C46100C45457 /* Parser.swift in Sources */,
+				320BEAB824B5D9C500C45457 /* ServiceType+Rx.swift in Sources */,
 				320BEAAC24B5C46100C45457 /* StringParser.swift in Sources */,
 				320BEAA624B5C46100C45457 /* RequestExecutor.swift in Sources */,
 				320BEAA024B5C46100C45457 /* APIError.swift in Sources */,
