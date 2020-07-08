@@ -1,5 +1,6 @@
 
 import Foundation
+import RxSwift
 //import Alamofire
 //
 //public class AlamofireExecutor: ExecutorType {
