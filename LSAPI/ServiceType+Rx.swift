@@ -19,11 +19,16 @@ public extension ServiceType {
 
     @available(iOS 13.0, *)
     func asPublisher(parameter: Parameter) -> AnyPublisher<Content, Error> {
-        return Future { (promise) in
-            _ = self.call(with: parameter) { result in
-                promise(result.mapToResult())
+        return
+            Deferred {
+                Future { (promise) in
+                    _ = self.call(with: parameter) { result in
+                        promise(result.mapToResult())
+                    }
+                }
             }
-        }.eraseToAnyPublisher()
+            .eraseToAnyPublisher()
+        
     }
 }
 
