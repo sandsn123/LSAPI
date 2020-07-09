@@ -89,7 +89,7 @@ extension APIResult: CustomDebugStringConvertible {
 }
 
 extension APIResult {
-    func mapToResult() -> Result<Value, Error> {
+    public func mapToResult() -> Result<Value, Error> {
         switch self {
         case .success(let value):
             return .success(value)

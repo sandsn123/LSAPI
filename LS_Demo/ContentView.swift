@@ -8,7 +8,7 @@
 
 import SwiftUI
 import Combine
-import LSAPI
+import CbService
 
 //MARK: Networking with Combine
 struct ContentView: View {
@@ -38,25 +38,5 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-    }
-}
-
-//MARK: Networking with RxSwift
-import RxSwift
-class ViewController: UIViewController {
-    private let disposeBag = DisposeBag()
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        BookService().asObservable()
-        .subscribe(onNext: { result in
-            switch result {
-            case .success(let data):
-                print(data)
-            case .failure(let error):
-                print(error)
-            }
-        })
-        .disposed(by: self.disposeBag)
     }
 }
