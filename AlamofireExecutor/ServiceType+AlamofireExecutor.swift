@@ -1,6 +1,6 @@
 
 import Foundation
-
+import LSAPI
 extension ServiceType {
     /// 调用接口
     ///
@@ -11,4 +11,8 @@ extension ServiceType {
     public func call(with parameter: Parameter, completionHandler: @escaping (APIResult<Content>) -> Void) -> Cancelable {
         return self.call(with: parameter, use: DefaultEngine.alamofireEngine, completionHandler: completionHandler)
     }
+}
+
+extension DefaultEngine {
+    public static let alamofireEngine: DefaultEngine = DefaultEngine(executor: AlamofireExecutor.instance)
 }

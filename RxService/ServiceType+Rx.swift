@@ -2,6 +2,7 @@
 import Foundation
 import RxSwift
 import LSAPI
+import AlamofireExecutor
 
 public extension ServiceType {
     func asObservable(parameter: Parameter) -> Observable<APIResult<Content>> {

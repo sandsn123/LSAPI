@@ -1,6 +1,7 @@
 
 import Foundation
 import Alamofire
+import LSAPI
 
 public class AlamofireExecutor: ExecutorType {
     public static let instance = AlamofireExecutor()
@@ -9,7 +10,7 @@ public class AlamofireExecutor: ExecutorType {
 
     private init() {}
 
-    public func execute(urlRequest: URLRequest, multipartFormData: MultipartFormData?, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> Cancelable {
+    public func execute(urlRequest: URLRequest, multipartFormData: LSAPI.MultipartFormData?, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> Cancelable {
         if let multipartFormData = multipartFormData {
             return doExecute(urlRequest: urlRequest, multipartFormData: multipartFormData, completionHandler: completionHandler)
         } else {
@@ -44,7 +45,7 @@ extension AlamofireExecutor {
         }
     }
 
-    fileprivate func doExecute(urlRequest: URLRequest, multipartFormData: @escaping MultipartFormData, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> Cancelable {
+    fileprivate func doExecute(urlRequest: URLRequest, multipartFormData: @escaping LSAPI.MultipartFormData, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> Cancelable {
         let serialCancelable = SerialCancelable()
         let validations = self.validations
 
@@ -91,9 +92,5 @@ fileprivate class SerialCancelable: Cancelable {
         self.isCanceled = true
         self.cancelable?.cancel()
     }
-}
-
-extension DefaultEngine {
-    public static let alamofireEngine: DefaultEngine = DefaultEngine(executor: AlamofireExecutor.instance)
 }
 
