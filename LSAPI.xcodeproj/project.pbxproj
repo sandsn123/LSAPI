@@ -30,23 +30,20 @@
 		320BEAC724B6532100C45457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320BEAC624B6532100C45457 /* Assets.xcassets */; };
 		320BEACA24B6532100C45457 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320BEAC924B6532100C45457 /* Preview Assets.xcassets */; };
 		320BEACD24B6532100C45457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320BEACB24B6532100C45457 /* LaunchScreen.storyboard */; };
-		320BEAD424B6535E00C45457 /* BookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BEAD224B6535E00C45457 /* BookService.swift */; };
-		320BEAD524B6535E00C45457 /* BookRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BEAD324B6535E00C45457 /* BookRequest.swift */; };
+		320BEAD424B6535E00C45457 /* GetBookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BEAD224B6535E00C45457 /* GetBookService.swift */; };
+		320BEAD524B6535E00C45457 /* GetBookRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BEAD324B6535E00C45457 /* GetBookRequest.swift */; };
 		320BEAD724B6537900C45457 /* BaseRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BEAD624B6537900C45457 /* BaseRequestProtocol.swift */; };
 		320BEADF24B6B5F500C45457 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320BEAAE24B5CC1400C45457 /* RxSwift.framework */; };
 		320BEAEA24B6D49D00C45457 /* RxService.h in Headers */ = {isa = PBXBuildFile; fileRef = 320BEAE824B6D49D00C45457 /* RxService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		320BEAED24B6D49D00C45457 /* RxService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320BEAE624B6D49D00C45457 /* RxService.framework */; };
-		320BEAEE24B6D49D00C45457 /* RxService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 320BEAE624B6D49D00C45457 /* RxService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		320BEAF224B6D51A00C45457 /* ServiceType+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BEAB624B5D9C500C45457 /* ServiceType+Rx.swift */; };
 		320BEAF324B6D53F00C45457 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320BEAAE24B5CC1400C45457 /* RxSwift.framework */; };
 		320BEB0424B6DC1C00C45457 /* CbService.h in Headers */ = {isa = PBXBuildFile; fileRef = 320BEB0224B6DC1C00C45457 /* CbService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		320BEB0724B6DC1D00C45457 /* CbService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320BEB0024B6DC1C00C45457 /* CbService.framework */; };
-		320BEB0824B6DC1D00C45457 /* CbService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 320BEB0024B6DC1C00C45457 /* CbService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		320BEB1224B6DC5000C45457 /* ServiceType+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BEB1124B6DC5000C45457 /* ServiceType+Combine.swift */; };
 		320BEB1424B6DCFD00C45457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BEB1324B6DCFD00C45457 /* ViewController.swift */; };
 		3260E51C24F0F0CD00BB0C59 /* AlamofireExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3260E51A24F0F0CD00BB0C59 /* AlamofireExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3260E51F24F0F0CD00BB0C59 /* AlamofireExecutor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3260E51824F0F0CD00BB0C59 /* AlamofireExecutor.framework */; };
-		3260E52024F0F0CD00BB0C59 /* AlamofireExecutor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3260E51824F0F0CD00BB0C59 /* AlamofireExecutor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3260E52424F0F0E500BB0C59 /* ServiceType+AlamofireExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BEAB724B5D9C500C45457 /* ServiceType+AlamofireExecutor.swift */; };
 		3260E52524F0F0ED00BB0C59 /* AlamofireExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320BEA9A24B5C46100C45457 /* AlamofireExecutor.swift */; };
 		3260E52624F0F10D00BB0C59 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320BEAB224B5D40300C45457 /* Alamofire.framework */; };
@@ -54,6 +51,19 @@
 		3260E53724F2A5C000BB0C59 /* AlamofireExecutor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3260E51824F0F0CD00BB0C59 /* AlamofireExecutor.framework */; };
 		3260E53824F2A5C000BB0C59 /* AlamofireExecutor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3260E51824F0F0CD00BB0C59 /* AlamofireExecutor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3260E53C24F2A60D00BB0C59 /* LSAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320BEA7F24B5C3C300C45457 /* LSAPI.framework */; };
+		3260E54224F2AAAE00BB0C59 /* EditBookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260E54024F2AAAD00BB0C59 /* EditBookService.swift */; };
+		3260E54324F2AAAE00BB0C59 /* EditBookRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260E54124F2AAAE00BB0C59 /* EditBookRequest.swift */; };
+		3260E54624F2AE1D00BB0C59 /* InsertBookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260E54424F2AE1D00BB0C59 /* InsertBookService.swift */; };
+		3260E54724F2AE1D00BB0C59 /* InsertBookRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260E54524F2AE1D00BB0C59 /* InsertBookRequest.swift */; };
+		3260E54D24F2AF8300BB0C59 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260E54924F2AF8300BB0C59 /* ListModel.swift */; };
+		3260E54E24F2AF8300BB0C59 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260E54A24F2AF8300BB0C59 /* Status.swift */; };
+		3260E54F24F2AF8300BB0C59 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260E54B24F2AF8300BB0C59 /* ResponseError.swift */; };
+		3260E55024F2AF8300BB0C59 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260E54C24F2AF8300BB0C59 /* Pagination.swift */; };
+		3260E55224F356E100BB0C59 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3260E55124F356E100BB0C59 /* HandyJSON.framework */; };
+		3260E55524F3591900BB0C59 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260E55424F3591900BB0C59 /* Book.swift */; };
+		3260E55724F35A6700BB0C59 /* ListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260E55624F35A6700BB0C59 /* ListParser.swift */; };
+		3260E55924F35AB200BB0C59 /* ResponseListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260E55824F35AB200BB0C59 /* ResponseListModel.swift */; };
+		3260E55B24F35C1F00BB0C59 /* PageableParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260E55A24F35C1F00BB0C59 /* PageableParameter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,19 +112,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		320BEADC24B653AA00C45457 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3260E52024F0F0CD00BB0C59 /* AlamofireExecutor.framework in Embed Frameworks */,
-				320BEAEE24B6D49D00C45457 /* RxService.framework in Embed Frameworks */,
-				320BEB0824B6DC1D00C45457 /* CbService.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3260E53B24F2A5C100BB0C59 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,8 +158,8 @@
 		320BEAC924B6532100C45457 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		320BEACC24B6532100C45457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		320BEACE24B6532100C45457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		320BEAD224B6535E00C45457 /* BookService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookService.swift; sourceTree = "<group>"; };
-		320BEAD324B6535E00C45457 /* BookRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRequest.swift; sourceTree = "<group>"; };
+		320BEAD224B6535E00C45457 /* GetBookService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBookService.swift; sourceTree = "<group>"; };
+		320BEAD324B6535E00C45457 /* GetBookRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBookRequest.swift; sourceTree = "<group>"; };
 		320BEAD624B6537900C45457 /* BaseRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestProtocol.swift; sourceTree = "<group>"; };
 		320BEAE624B6D49D00C45457 /* RxService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		320BEAE824B6D49D00C45457 /* RxService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxService.h; sourceTree = "<group>"; };
@@ -175,6 +172,19 @@
 		3260E51824F0F0CD00BB0C59 /* AlamofireExecutor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireExecutor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3260E51A24F0F0CD00BB0C59 /* AlamofireExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlamofireExecutor.h; sourceTree = "<group>"; };
 		3260E51B24F0F0CD00BB0C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3260E54024F2AAAD00BB0C59 /* EditBookService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBookService.swift; sourceTree = "<group>"; };
+		3260E54124F2AAAE00BB0C59 /* EditBookRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBookRequest.swift; sourceTree = "<group>"; };
+		3260E54424F2AE1D00BB0C59 /* InsertBookService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertBookService.swift; sourceTree = "<group>"; };
+		3260E54524F2AE1D00BB0C59 /* InsertBookRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertBookRequest.swift; sourceTree = "<group>"; };
+		3260E54924F2AF8300BB0C59 /* ListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		3260E54A24F2AF8300BB0C59 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		3260E54B24F2AF8300BB0C59 /* ResponseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		3260E54C24F2AF8300BB0C59 /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		3260E55124F356E100BB0C59 /* HandyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HandyJSON.framework; path = Carthage/Build/iOS/HandyJSON.framework; sourceTree = "<group>"; };
+		3260E55424F3591900BB0C59 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		3260E55624F35A6700BB0C59 /* ListParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListParser.swift; sourceTree = "<group>"; };
+		3260E55824F35AB200BB0C59 /* ResponseListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseListModel.swift; sourceTree = "<group>"; };
+		3260E55A24F35C1F00BB0C59 /* PageableParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageableParameter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +202,7 @@
 				320BEAED24B6D49D00C45457 /* RxService.framework in Frameworks */,
 				320BEB0724B6DC1D00C45457 /* CbService.framework in Frameworks */,
 				3260E51F24F0F0CD00BB0C59 /* AlamofireExecutor.framework in Frameworks */,
+				3260E55224F356E100BB0C59 /* HandyJSON.framework in Frameworks */,
 				320BEADF24B6B5F500C45457 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +297,7 @@
 		320BEAAD24B5CC1300C45457 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3260E55124F356E100BB0C59 /* HandyJSON.framework */,
 				320BEAB224B5D40300C45457 /* Alamofire.framework */,
 				320BEAAE24B5CC1400C45457 /* RxSwift.framework */,
 			);
@@ -295,13 +307,13 @@
 		320BEABF24B6531E00C45457 /* LS_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				320BEAD624B6537900C45457 /* BaseRequestProtocol.swift */,
-				320BEAD324B6535E00C45457 /* BookRequest.swift */,
-				320BEAD224B6535E00C45457 /* BookService.swift */,
+				3260E53F24F2AA0400BB0C59 /* Services */,
+				3260E54824F2AF7700BB0C59 /* Response */,
 				320BEAC024B6531E00C45457 /* AppDelegate.swift */,
 				320BEAC224B6531E00C45457 /* SceneDelegate.swift */,
 				320BEB1324B6DCFD00C45457 /* ViewController.swift */,
 				320BEAC424B6531E00C45457 /* ContentView.swift */,
+				3260E55424F3591900BB0C59 /* Book.swift */,
 				320BEAC624B6532100C45457 /* Assets.xcassets */,
 				320BEACB24B6532100C45457 /* LaunchScreen.storyboard */,
 				320BEACE24B6532100C45457 /* Info.plist */,
@@ -347,6 +359,34 @@
 				3260E51B24F0F0CD00BB0C59 /* Info.plist */,
 			);
 			path = AlamofireExecutor;
+			sourceTree = "<group>";
+		};
+		3260E53F24F2AA0400BB0C59 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				320BEAD624B6537900C45457 /* BaseRequestProtocol.swift */,
+				320BEAD324B6535E00C45457 /* GetBookRequest.swift */,
+				320BEAD224B6535E00C45457 /* GetBookService.swift */,
+				3260E54124F2AAAE00BB0C59 /* EditBookRequest.swift */,
+				3260E54024F2AAAD00BB0C59 /* EditBookService.swift */,
+				3260E54524F2AE1D00BB0C59 /* InsertBookRequest.swift */,
+				3260E54424F2AE1D00BB0C59 /* InsertBookService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3260E54824F2AF7700BB0C59 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				3260E54924F2AF8300BB0C59 /* ListModel.swift */,
+				3260E54C24F2AF8300BB0C59 /* Pagination.swift */,
+				3260E55A24F35C1F00BB0C59 /* PageableParameter.swift */,
+				3260E54B24F2AF8300BB0C59 /* ResponseError.swift */,
+				3260E55824F35AB200BB0C59 /* ResponseListModel.swift */,
+				3260E54A24F2AF8300BB0C59 /* Status.swift */,
+				3260E55624F35A6700BB0C59 /* ListParser.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,7 +452,6 @@
 				320BEABA24B6531E00C45457 /* Sources */,
 				320BEABB24B6531E00C45457 /* Frameworks */,
 				320BEABC24B6531E00C45457 /* Resources */,
-				320BEADC24B653AA00C45457 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -603,13 +642,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3260E55524F3591900BB0C59 /* Book.swift in Sources */,
 				320BEAC124B6531E00C45457 /* AppDelegate.swift in Sources */,
-				320BEAD524B6535E00C45457 /* BookRequest.swift in Sources */,
+				3260E55924F35AB200BB0C59 /* ResponseListModel.swift in Sources */,
+				3260E54224F2AAAE00BB0C59 /* EditBookService.swift in Sources */,
+				320BEAD524B6535E00C45457 /* GetBookRequest.swift in Sources */,
+				3260E55724F35A6700BB0C59 /* ListParser.swift in Sources */,
+				3260E54D24F2AF8300BB0C59 /* ListModel.swift in Sources */,
+				3260E55B24F35C1F00BB0C59 /* PageableParameter.swift in Sources */,
+				3260E54624F2AE1D00BB0C59 /* InsertBookService.swift in Sources */,
 				320BEAD724B6537900C45457 /* BaseRequestProtocol.swift in Sources */,
 				320BEAC324B6531E00C45457 /* SceneDelegate.swift in Sources */,
 				320BEB1424B6DCFD00C45457 /* ViewController.swift in Sources */,
-				320BEAD424B6535E00C45457 /* BookService.swift in Sources */,
+				3260E54324F2AAAE00BB0C59 /* EditBookRequest.swift in Sources */,
+				3260E54E24F2AF8300BB0C59 /* Status.swift in Sources */,
+				320BEAD424B6535E00C45457 /* GetBookService.swift in Sources */,
+				3260E54724F2AE1D00BB0C59 /* InsertBookRequest.swift in Sources */,
+				3260E55024F2AF8300BB0C59 /* Pagination.swift in Sources */,
 				320BEAC524B6531E00C45457 /* ContentView.swift in Sources */,
+				3260E54F24F2AF8300BB0C59 /* ResponseError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -866,7 +917,6 @@
 		320BEAD024B6532100C45457 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -894,7 +944,6 @@
 		320BEAD124B6532100C45457 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;

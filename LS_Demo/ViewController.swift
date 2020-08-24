@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         //MARK: Networking with RxSwift
-        BookService().asObservable()
+        GetBookService().asObservable()
         .subscribe(onNext: { result in
             switch result {
             case .success(let data):

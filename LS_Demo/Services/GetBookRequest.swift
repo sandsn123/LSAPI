@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct BookRequest: BaseRequestProtocol {
+struct GetBookRequest: BaseRequestProtocol {
     typealias Parameter = Void
     
     func relativePath(for parameter: Parameter) -> String {

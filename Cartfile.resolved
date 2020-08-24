@@ -1,2 +1,2 @@
 github "Alamofire/Alamofire" "5.2.1"
-github "ReactiveX/RxSwift" "5.1.1"
+github "alibaba/HandyJSON" "5.0.2"

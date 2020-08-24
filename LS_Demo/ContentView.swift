@@ -19,7 +19,7 @@ struct ContentView: View {
         Text("Hello, World!")
             .onAppear {
                 
-                self.cancellable = BookService().asPublisher()
+                self.cancellable = GetBookService().asPublisher()
                     .sink(receiveCompletion: { (completion) in
                         
                     }) { (result) in

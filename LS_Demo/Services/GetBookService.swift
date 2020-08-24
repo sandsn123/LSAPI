@@ -8,11 +8,11 @@
 
 import LSAPI
 
-struct BookService: GenericServiceType {
+struct GetBookService: GenericServiceType {
     
-    typealias Request = BookRequest
+    typealias Request = GetBookRequest
     
-    typealias Parser = BookParser
+    typealias Parser = ListParser<Book>
 
     func getRequest() -> Request {
         return Request()
@@ -23,7 +23,7 @@ struct BookService: GenericServiceType {
     init() {}
 }
 
-struct BookParser: ParserType {
+struct GetBookParser: ParserType {
     func parse(_ data: Data?, response: HTTPURLResponse) throws -> String {
         guard let data = data, let jsonString = String(data: data, encoding: .utf8) else {
             throw APIError.dataIsNil
