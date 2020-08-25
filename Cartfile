@@ -1,4 +1,3 @@
 # github
 github "Alamofire/Alamofire"
 github "ReactiveX/RxSwift"
-github "alibaba/HandyJSON" ~> 5.0.2
