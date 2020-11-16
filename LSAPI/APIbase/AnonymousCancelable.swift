@@ -9,7 +9,7 @@ public class AnonymousCancelable: Cancelable {
     private var action: (() -> Void)?
     private let lock = NSRecursiveLock()
     
-    public init(action: (() -> Void)?) {
+    public init(action: @escaping () -> Void) {
         self.action = action
     }
     
